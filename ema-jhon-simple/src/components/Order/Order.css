@@ -1,0 +1,18 @@
+.product-container {
+  margin: 0 auto;
+}
+.checkout-btn button {
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 232px;
+  height: 48px;
+  padding: 5px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.checkout-btn button:hover {
+  background: #e88c01;
+}

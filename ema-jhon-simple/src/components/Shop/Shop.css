@@ -1,0 +1,30 @@
+.shop-container {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  width: 95%;
+  margin: auto;
+}
+.products-container {
+  /* margin-left: 20px; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 45px;
+}
+.cart-container {
+  background: rgba(255, 153, 0, 0.3);
+}
+.review-btn button {
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 232px;
+  height: 48px;
+  padding: 5px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.review-btn button:hover {
+  background: #e88c01;
+}

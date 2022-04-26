@@ -1,0 +1,39 @@
+.review-item {
+  display: flex;
+  border: 1px solid rgba(0, 208, 255, 0.983);
+  border-radius: 10px;
+  padding: 8px;
+  margin-top: 21px;
+  width: 571px;
+}
+.review-item img {
+  width: 91px;
+  margin-right: 8px;
+}
+.details-container p {
+  margin: 0;
+}
+.details-container.title {
+  font-size: 20px;
+}
+.review-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.orange-color {
+  color: rgb(255, 145, 0);
+}
+.button-div button {
+  color: rgba(255, 60, 0, 0.966);
+  background-color: rgba(255, 3, 3, 0.123);
+  border: none;
+  padding: 13px;
+  border-radius: 50%;
+  font-size: 25px;
+  margin-right: 10px;
+  height: 55px;
+  width: 55px;
+  cursor: pointer;
+}
