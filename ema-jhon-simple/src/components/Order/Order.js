@@ -7,16 +7,16 @@ import useProducts from "../../hooks/UseProducts";
 import { removeFromDb } from "../../utilities/fakedb";
 import Cart from "../Cart/Cart";
 import ReviewItem from "../ReviewItem/ReviewItem";
-import "./Order.css"
+import "./Order.css";
 
 const Order = () => {
   const [products, setProducts] = useProducts();
   const [cart, setCart] = useCart(products);
 
   const handleRemoveItem = (product) => {
-    const rest = cart.filter((pd) => pd.id !== product.id);
+    const rest = cart.filter((pd) => pd._id !== product._id);
     setCart(rest);
-    removeFromDb(product.id);
+    removeFromDb(product._id);
   };
 
   return (
@@ -25,7 +25,7 @@ const Order = () => {
         {cart.map((product) => (
           <ReviewItem
             handleRemoveItem={handleRemoveItem}
-            key={product.id}
+            key={product._id}
             product={product}
           ></ReviewItem>
         ))}
